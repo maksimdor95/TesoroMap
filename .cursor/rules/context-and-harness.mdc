@@ -1,0 +1,19 @@
+---
+description: Context engineering and harness-over-model defaults
+alwaysApply: true
+---
+
+# Context + harness
+
+Model is the engine. Harness is the product advantage.
+
+**Context types to manage:** instructions, knowledge, memory, examples, tools, guardrails.
+
+- Keep **static** context small: `AGENTS.md`, rules, hard invariants.
+- Put procedures in **dynamic** Agent Skills (`agent/skills/*/SKILL.md`) loaded on demand.
+- Prefer progressive disclosure: metadata → skill body → deep refs only when needed.
+- Prefer MCP for tools/data connectors; define when/how tools may be called.
+- Guardrails/hooks for never-forget checks (secrets, unsafe tool calls, schema).
+- Always consider cost/latency: route simple tasks to cheaper models; cache stable prompt prefixes when available.
+
+Do not fine-tune unless evals prove prompting + RAG are insufficient.

@@ -1,0 +1,20 @@
+---
+description: Factory-model SDLC for AI-assisted delivery
+alwaysApply: true
+---
+
+# Factory SDLC
+
+Primary deliverable is the system that produces correct software: specs, agents, gates, feedback loops.
+
+Phase defaults:
+
+1. **Plan/architecture** — humans decide trade-offs; encode them in docs/rules/skills.
+2. **Implement** — agents generate inside sandboxed tools; multi-file OK when scoped.
+3. **QA** — tests + evals + trajectory checks; failures feed back into the agent loop.
+4. **Review/deploy** — AI first-pass review; humans LGTM architecture/security; observe in prod.
+
+Use **conductor** mode for ambiguity and deep debugging.  
+Use **orchestrator** mode for well-specified tasks with clear acceptance tests/evals.
+
+Watch the 80% problem: AI drafts fast; humans own edge cases, integration, and subtle correctness.

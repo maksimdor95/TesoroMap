@@ -1,0 +1,82 @@
+/**
+ * TesoroMap design tokens — Devin Desktop–inspired product chrome.
+ * Source of truth: docs/design/DESIGN_SYSTEM.md
+ * Do not import Windsurf marketing navy/teal into the map app.
+ */
+
+:root {
+  /* Surfaces */
+  --tm-bg-app: #f4f4f5;
+  --tm-bg-sidebar: #f7f7f8;
+  --tm-bg-panel: #ffffff;
+  --tm-bg-muted: #eeeef0;
+  --tm-bg-hover: #e8e8ea;
+
+  /* Text */
+  --tm-text: #111113;
+  --tm-text-secondary: #5c5c66;
+  --tm-text-tertiary: #8b8b96;
+  --tm-text-inverse: #ffffff;
+
+  /* Borders */
+  --tm-border: #e4e4e7;
+  --tm-border-strong: #d4d4d8;
+
+  /* Chrome accents / status */
+  --tm-accent: #2563eb;
+  --tm-accent-soft: #eff4ff;
+  --tm-success: #16a34a;
+  --tm-warning: #d97706;
+  --tm-danger: #dc2626;
+  --tm-info: #2563eb;
+
+  /* Map legend (semantic, not chrome) */
+  --tm-map-parcel: #64748b;
+  --tm-map-parcel-fill: rgba(100, 116, 139, 0.18);
+  --tm-map-tender: #7c3aed;
+  --tm-map-sale: #2563eb;
+  --tm-map-lease: #0d9488;
+  --tm-map-org: #ca8a04;
+  --tm-map-road-trunk: #334155;
+  --tm-map-road-primary: #64748b;
+  --tm-map-road-local: #a1a1aa;
+  --tm-map-focus: #f59e0b;
+
+  /* Typography */
+  --tm-font-sans: "Geist Sans", "Inter", ui-sans-serif, system-ui, -apple-system,
+    "Segoe UI", sans-serif;
+  --tm-font-mono: "Geist Mono", "IBM Plex Mono", ui-monospace, Menlo, monospace;
+
+  --tm-text-xs: 12px;
+  --tm-text-sm: 13px;
+  --tm-text-md: 14px;
+  --tm-text-lg: 15px;
+  --tm-text-xl: 18px;
+  --tm-text-2xl: 22px;
+
+  /* Shape */
+  --tm-radius-sm: 6px;
+  --tm-radius-md: 10px;
+  --tm-radius-lg: 12px;
+  --tm-radius-pill: 9999px;
+
+  /* Elevation */
+  --tm-shadow-sm: 0 1px 2px rgba(17, 17, 19, 0.04);
+  --tm-shadow-md: 0 4px 16px rgba(17, 17, 19, 0.06);
+
+  /* Layout */
+  --tm-sidebar-width: 260px;
+  --tm-dossier-width: 400px;
+  --tm-topbar-height: 52px;
+  --tm-control-height: 34px;
+
+  /* Motion */
+  --tm-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --tm-duration: 160ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --tm-duration: 0ms;
+  }
+}

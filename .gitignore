@@ -1,0 +1,22 @@
+# Local / secrets
+.env
+.env.*
+!.env.example
+*.pem
+.DS_Store
+
+# Dependencies / build
+node_modules/
+dist/
+build/
+.venv/
+__pycache__/
+*.pyc
+
+# Agent run artifacts
+agent/traces/*
+!agent/traces/.gitignore
+
+# IDE
+.idea/
+*.swp

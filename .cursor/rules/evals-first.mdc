@@ -1,0 +1,18 @@
+---
+description: Tests + evals are the contract for AI-touched behavior
+alwaysApply: true
+---
+
+# Evals first
+
+Without measurement, AI work is vibe coding.
+
+- Deterministic logic → **tests**.
+- LLM/agent behavior → **evals** (dataset + grader + score).
+- Prefer starting with 20–50 real failure-derived cases over a giant suite.
+- Graders may be code, LLM-as-judge, or human; combine; spot-check traces.
+- Change one variable per experiment (prompt, chunking, model, top_k).
+- New models/prompts land only if evals improve (or cost/latency wins with no quality drop).
+- Put datasets under `agent/evals/datasets/`; document rubric next to the suite.
+
+If asked to add AI features without an eval path, create a minimal eval stub in the same change.

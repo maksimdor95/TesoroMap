@@ -1,0 +1,22 @@
+---
+description: Agentic engineering over vibe coding for shippable work
+alwaysApply: true
+---
+
+# Agentic engineering
+
+Work on a spectrum. Prefer discipline as stakes rise.
+
+- **Vibe OK**: throwaway prototypes, spikes, personal scripts.
+- **Agentic required**: shared branches, production paths, money/data/security surfaces.
+
+For shippable work:
+
+1. Clarify intent and success criteria before coding.
+2. Prefer specs + tests/evals as the contract with AI over vague prompts.
+3. Implement; then verify with automated gates — not “looks right”.
+4. Review architecture and critical paths yourself; let AI handle boilerplate.
+5. On failure, fix harness/context/tools/gates first, not “try a smarter model”.
+
+Human owns: architecture trade-offs, release judgment, security boundaries.  
+Agent owns: implementation inside those constraints.
