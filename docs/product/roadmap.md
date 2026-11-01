@@ -30,7 +30,7 @@
 - [x] Системная архитектура (`docs/architecture/ARCHITECTURE.md`)
 - [x] Эта дорожная карта
 - [x] Дизайн-система Devin Desktop (`docs/design/`)
-- [ ] Репозиторий под git, remote GitHub, первый коммит docs/harness
+- [x] Репозиторий под git, remote GitHub, первый коммит docs/harness (`origin` → maksimdor95/TesoroMap)
 - [x] Решение по стеку v0 записано в архитектуре (Vite/React/MapLibre + FastAPI + PostGIS/Neon)
 
 ### Продуктовые решения до кода
